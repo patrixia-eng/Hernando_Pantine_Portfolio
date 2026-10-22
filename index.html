@@ -3,43 +3,158 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pantine Hernando | Portfolio</title>
+  <meta name="description" content="Portfolio of Pantine B. Hernando, a BS Information Technology student focused on system analysis in Cebu City, Philippines.">
+  <title>Pantine B. Hernando | IT Student Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#hero" aria-label="Pantine B. Hernando — back to top">Pantine B. Hernando<span>.</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#cybersecurity">Cybersecurity</a><a href="#certifications">Certifications</a><a href="#contact">Contact</a>
+      </div>
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+        <span class="theme-icon" aria-hidden="true">☾</span><span class="theme-label">Dark</span>
+      </button>
     </nav>
   </header>
 
-  <main>
-    <section id="hero">
-      <h1>Pantine Hernando</h1>
-      <p>BSIT student and system analyst.</p>
+  <main id="main-content">
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">BS Information Technology Student</p>
+          <h1 class="hero-name" id="hero-title">Pantine B. <span>Hernando.</span></h1>
+          <p class="hero-intro">Fourth-year student seeking an OJT position in systems analysis, web development, IT support, or cybersecurity. I turn complex ideas into clear, practical systems.</p>
+          <address class="hero-details" aria-label="Contact information">
+            <span>Cebu City, Philippines</span>
+            <a href="mailto:pantine.hernando.23@usjr.edu.ph">pantine.hernando.23@usjr.edu.ph</a>
+            <a href="tel:+639514274610">0951 427 4610</a>
+          </address>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View my projects</a>
+            <a class="button button-secondary" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <figure class="profile-visual">
+          <img src="assets/pantine-hernando-profile.png" alt="Professional portrait of Pantine B. Hernando" width="1080" height="1440">
+        </figure>
+      </div>
     </section>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>Write about yourself here.</p>
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container split-layout">
+        <div><p class="section-kicker">01 / About</p><h2 id="about-title">About Me</h2></div>
+        <div class="body-copy">
+          <p>I’m a fourth-year BS Information Technology student at the University of San Jose-Recoletos. My technical interests include system design, database modeling, web application development, IT support, and cybersecurity.</p>
+          <dl class="quick-facts">
+            <div><dt>Based in</dt><dd>Cebu City, Philippines</dd></div><div><dt>Education</dt><dd>BS Information Technology, USJ-R</dd></div><div><dt>Graduation</dt><dd>Expected June 2027</dd></div><div><dt>Interests</dt><dd>Systems, web, IT support, and cybersecurity</dd></div>
+          </dl>
+        </div>
+      </div>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <article>
-        <h3>Project name</h3>
-        <p>What it does and your role.</p>
-      </article>
+    <section class="section section-tinted" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="section-kicker">02 / Projects</p><h2 id="projects-title">Systems shaped around real needs.</h2></div><p>Academic projects that explore document workflows, smart matching, and community health records.</p></div>
+        <div class="project-grid">
+          <article class="project-card featured-card project-card-with-image">
+            <div class="card-topline"><span>Capstone · 2026</span><span>01</span></div>
+            <button class="project-image-link" type="button" data-lightbox-open="conexia-lightbox" aria-label="Enlarge the Conexia dashboard screenshot">
+              <img class="project-image" src="assets/conexia-dashboard.png" alt="Conexia IRO Admin dashboard showing office overview and recent activity" width="1917" height="1078" loading="lazy">
+            </button>
+            <h3>Conexia</h3>
+            <p class="project-subtitle">Intelligent Document Management System with Workflow Automation</p>
+            <p class="project-context">Built for the USJ-R PAIR/IRO Office.</p>
+            <ul class="project-details"><li>Designed the architecture, ERD, flowcharts, UML use cases, and project documentation.</li><li>Handled the IRO Admin module, including document review, Legal Counsel routing, reports, archives, and engagement creation.</li></ul>
+            <ul class="tag-list" aria-label="Technologies"><li>React.js / Vite</li><li>Laravel REST API</li><li>Supabase / PostgreSQL</li><li>JWT</li></ul>
+          </article>
+          <article class="project-card project-card-with-image">
+            <div class="card-topline"><span>Research · 2026</span><span>02</span></div>
+            <button class="project-image-link" type="button" data-lightbox-open="revora-lightbox" aria-label="Enlarge the REVORA dashboard screenshot">
+              <img class="project-image" src="assets/revora-dashboard.png" alt="Lost and found smart-matching dashboard for the REVORA project" width="1376" height="978" loading="lazy">
+            </button>
+            <h3>REVORA</h3>
+            <p class="project-subtitle">Cross-Platform Lost and Found Management System</p>
+            <p class="project-context">A web and mobile smart-matching system for USJ-R.</p>
+            <ul class="project-details"><li>Produced ERD and use-case diagrams for the web and mobile system.</li><li>Wrote the Introduction, Related Literature, Methodology, and Conceptual Framework chapters.</li></ul>
+            <ul class="tag-list" aria-label="Technologies"><li>React.js</li><li>React Native</li><li>Node.js / Express</li><li>MySQL</li><li>Firebase</li></ul>
+          </article>
+          <article class="project-card project-card-with-image">
+            <div class="card-topline"><span>Software Engineering · 2025</span><span>03</span></div>
+            <button class="project-image-link" type="button" data-lightbox-open="life-lightbox" aria-label="Enlarge the LIFE Health System screenshot">
+              <img class="project-image" src="assets/life-health-system.png" alt="LIFE Health System portal selection screen" width="1898" height="972" loading="lazy">
+            </button>
+            <h3>LIFE</h3>
+            <p class="project-subtitle">Local Information for Health Efficiency</p>
+            <p class="project-context">A web-based health records system for Barangay Duljo Fatima.</p>
+            <ul class="project-details"><li>Designed the architecture, ERD, flowcharts, UML use cases, and functional requirements.</li><li>Collaborated with a three-member team and coordinated testing with barangay health workers.</li></ul>
+            <ul class="tag-list" aria-label="Technologies"><li>Python / Flask</li><li>Tailwind CSS</li><li>SQLite / MySQL</li><li>Render</li></ul>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>your@email.com</p>
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container split-layout">
+        <div><p class="section-kicker">03 / Skills</p><h2 id="skills-title">A growing technical toolkit.</h2></div>
+        <div class="skills-grid">
+          <article class="skill-item"><span aria-hidden="true">01</span><div><h3>Analysis &amp; Design</h3><p>UML, ERD, flowcharts, use-case modeling, system documentation, and requirements definition.</p></div></article>
+          <article class="skill-item"><span aria-hidden="true">02</span><div><h3>Languages</h3><p>JavaScript, PHP, HTML, and CSS.</p></div></article>
+          <article class="skill-item"><span aria-hidden="true">03</span><div><h3>Web &amp; Database</h3><p>React.js, Laravel, and MySQL.</p></div></article>
+          <article class="skill-item"><span aria-hidden="true">04</span><div><h3>Tools</h3><p>Git/GitHub, Wireshark, Power BI, Figma, and Cisco Packet Tracer.</p></div></article>
+          <article class="skill-item"><span aria-hidden="true">05</span><div><h3>Security</h3><p>Digital forensics, network traffic analysis, cryptography fundamentals, and picoCTF challenges.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="cybersecurity" aria-labelledby="cybersecurity-title">
+      <div class="container split-layout">
+        <div><p class="section-kicker">04 / Cybersecurity</p><h2 id="cybersecurity-title">Learning security by doing.</h2></div>
+        <div class="body-copy cyber-copy">
+          <p class="practice-date">Self-directed picoCTF practice · February–April 2026</p>
+          <p>I worked through digital-forensics challenges, including network traffic analysis with Wireshark, as well as cryptography challenges. I documented each challenge and created a personal cybersecurity learning roadmap.</p>
+          <a class="button button-secondary" href="https://github.com/jasmineomandam21-ai/ALtF4" target="_blank" rel="noopener noreferrer">View write-ups and roadmap <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="certifications" aria-labelledby="certifications-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="section-kicker">05 / Certifications</p><h2 id="certifications-title">Continued learning.</h2></div><p>Certifications completed as of October 2026.</p></div>
+        <div class="cert-list">
+          <article><span class="cert-number">01</span><div><h3>Introduction to Google Cloud Platform</h3><p>Simplilearn SkillUp</p></div><div class="cert-meta"><time datetime="2026-10">Oct 2026</time><a href="certificates/google-cloud-platform.pdf" target="_blank" rel="noopener noreferrer">View certificate <span aria-hidden="true">↗</span><span class="sr-only"> (opens PDF in a new tab)</span></a></div></article>
+          <article><span class="cert-number">02</span><div><h3>Introduction to Cybersecurity</h3><p>Cisco Networking Academy</p></div><div class="cert-meta"><time datetime="2026-10">Oct 2026</time><a href="certificates/introduction-to-cybersecurity.pdf" target="_blank" rel="noopener noreferrer">View certificate <span aria-hidden="true">↗</span><span class="sr-only"> (opens PDF in a new tab)</span></a></div></article>
+          <article><span class="cert-number">03</span><div><h3>Fundamentals of Database: What is SQL?</h3><p>Simplilearn SkillUp</p></div><div class="cert-meta"><time datetime="2026-10">Oct 2026</time><a href="certificates/fundamentals-of-database-what-is-sql.pdf" target="_blank" rel="noopener noreferrer">View certificate <span aria-hidden="true">↗</span><span class="sr-only"> (opens PDF in a new tab)</span></a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-inner">
+        <p class="section-kicker">06 / Contact</p><h2 id="contact-title">Let’s connect.</h2><p>I’m currently seeking OJT opportunities in systems analysis, web development, IT support, or cybersecurity.</p>
+        <div class="contact-links"><a class="button button-primary" href="mailto:pantine.hernando.23@usjr.edu.ph">pantine.hernando.23@usjr.edu.ph</a><a class="button button-secondary" href="tel:+639514274610">0951 427 4610</a><a class="button button-secondary" href="https://github.com/jasmineomandam21-ai/ALtF4" target="_blank" rel="noopener noreferrer">Cybersecurity GitHub <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></div>
+      </div>
     </section>
   </main>
 
+  <footer><div class="container footer-inner"><p>© 2026 Pantine B. Hernando</p><a href="#hero">Back to top ↑</a></div></footer>
+
+  <!-- The native dialog keeps the enlarged project image inside the portfolio. -->
+  <dialog class="image-lightbox" id="conexia-lightbox" aria-label="Conexia dashboard screenshot">
+    <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close enlarged screenshot">×</button>
+    <img src="assets/conexia-dashboard.png" alt="Enlarged Conexia IRO Admin dashboard showing office overview and recent activity" width="1917" height="1078">
+  </dialog>
+  <dialog class="image-lightbox" id="revora-lightbox" aria-label="REVORA dashboard screenshot">
+    <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close enlarged screenshot">×</button>
+    <img src="assets/revora-dashboard.png" alt="Enlarged lost and found smart-matching dashboard for the REVORA project" width="1376" height="978">
+  </dialog>
+  <dialog class="image-lightbox" id="life-lightbox" aria-label="LIFE Health System screenshot">
+    <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close enlarged screenshot">×</button>
+    <img src="assets/life-health-system.png" alt="Enlarged LIFE Health System portal selection screen" width="1898" height="972">
+  </dialog>
   <script src="script.js"></script>
 </body>
 </html>
